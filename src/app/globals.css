@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0b0e;
+  --bg-elev: #111319;
+  --ink: #f5f3ee;
+  --ink-dim: #9a9ca6;
+  --brass: #c9a227;
+  --brass-glow: #e8c766;
+  --signal: #4f7cff;
+  --signal-glow: #86a8ff;
+  --line: rgba(255, 255, 255, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--brass);
+  color: #0a0b0e;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
